@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel admina</title>
+</head>
+<body>
+
+
+<h1>Panel admina</h1>
+
+<h2>Lista użytkowników</h2>
+
+<ul>
+    <li th:each="user: ${users}" >
+        <span th:text="${user.username}"></span>
+        <span>   </span>
+        <a th:href ="|/admin/deleteUser/${user.id}|">Usuń</a>
+    </li>
+</ul>
+
+
+
+</body>
+</html>

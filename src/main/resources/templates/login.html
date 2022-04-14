@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Logowanie</title>
+</head>
+<body>
+<h1>logowanie</h1>
+
+<img src="/img/javastart-logo.png" />
+
+<p th:if="${showErrorMessage}">Niepoprawne logowanie!</p>
+
+<form th:action="@{/logowanie}" method="post">
+    <input name="username" placeholder="Email"/> <br/>
+    <input name="password" placeholder="Password"/> <br/>
+    <input type="submit" value="Login"/>
+</form>
+
+<a href="/reset">Nie pamiętasz hasła?</a>
+
+
+</body>
+</html>
