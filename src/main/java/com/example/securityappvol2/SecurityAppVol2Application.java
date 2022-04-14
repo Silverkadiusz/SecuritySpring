@@ -2,7 +2,7 @@ package com.example.securityappvol2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+//spring security app
 @SpringBootApplication
 public class SecurityAppVol2Application {
 
